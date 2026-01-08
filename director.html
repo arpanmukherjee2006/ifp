@@ -231,6 +231,43 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071');">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-10"></div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center pt-32 px-5">
+            <h1
+                class="font-sans text-5xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight tracking-tight drop-shadow-2xl mb-6">
+                Director
+            </h1>
+            <p
+                class="text-white text-xl lg:text-2xl xl:text-3xl font-light opacity-90 max-w-4xl leading-relaxed drop-shadow-lg">
+                Leadership & Vision for Forest Research Excellence
+            </p>
+            <div class="mt-8">
+                <p class="text-forest-green-300 text-lg lg:text-xl font-medium">
+                    Strategic Direction | Research Leadership | Innovation
+                </p>
+            </div>
+        </div>
+
+        <!-- Explore Button -->
+        <div class="absolute bottom-0 left-0 right-0 z-20">
+            <button onclick="document.querySelector('.pt-32').scrollIntoView({behavior: 'smooth'})"
+                class="w-full bg-forest-green-600 hover:bg-forest-green-700 text-white py-4 font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2">
+                <span>Explore Director</span>
+                <span class="text-white text-sm font-bold">▼</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="h-0"></div>
+
     <!-- Director Section -->
     <section class="pt-32 pb-20 bg-gradient-to-br from-forest-green-50 to-white min-h-screen flex items-center">
         <div class="max-w-7xl mx-auto px-5 w-full">
