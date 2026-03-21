@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O./OIC(Admin)/EST/ACC - Institute of Forest Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': {
+                            50: '#f0f9f0',
+                            100: '#dcf2dc',
+                            200: '#bce5bc',
+                            300: '#8dd18d',
+                            400: '#4CAF50',
+                            500: '#2E7D32',
+                            600: '#1B5E20',
+                            700: '#0d4f12',
+                            800: '#0a3f0e',
+                            900: '#08340b',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                        'serif': ['Source Serif Pro', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <!-- Combined Navigation -->
+    <!-- Navigation Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Landing Hero Section -->
+    <section class="relative min-h-screen overflow-hidden flex flex-col">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://ik.imagekit.io/forestproductivity/indexhero.png" alt="Institute of Forest Productivity"
+                class="w-full h-full object-cover">
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-forest-green-800/40 via-forest-green-700/20 to-forest-green-600/50">
+            </div>
+        </div>
+
+        <!-- Banner Image at Bottom of Hero -->
+        <div class="absolute top-18 bottom-0 left-0 right-0 z-10">
+            <img src="https://ik.imagekit.io/forestproductivity/index%20banner.png"
+                alt="ICFRE Institute of Forest Productivity - Government of India" class="w-full h-auto object-contain">
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Leadership Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 px-4">
+                <!-- Prime Minister -->
+                <div onclick="window.open('https://www.pmindia.gov.in/en/', '_blank')"
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl cursor-pointer">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-yellow-50 to-yellow-100 p-6">
+                            <img src="https://ik.imagekit.io/forestproductivity/narendra_modi.jpg"
+                                alt="Shri Narendra Modi"
+                                class="w-full h-full object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        </div>
+
+
+                    </div>
+                    <div class="p-6 bg-gradient-to-b from-white to-yellow-50/30">
+                        <h3 class="font-bold text-gray-900 text-base mb-2 leading-tight">Shri Narendra Modi</h3>
+                        <p class="text-sm text-yellow-700 font-semibold mb-1">Hon'ble Prime Minister</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">Government of India</p>
+                    </div>
+                </div>
+
+                <!-- Minister -->
+                <div onclick="window.open('https://moef.gov.in/cabinet-minister', '_blank')"
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl cursor-pointer">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-forest-green-50 to-forest-green-100 p-6">
+                            <img src="https://ik.imagekit.io/forestproductivity/byadav.jpg" alt="Shri Bhupender Yadav"
+                                class="w-full h-full object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        </div>
+
+
+                    </div>
+                    <div class="p-6 bg-gradient-to-b from-white to-forest-green-50/30">
+                        <h3 class="font-bold text-gray-900 text-base mb-2 leading-tight">Shri Bhupender Yadav</h3>
+                        <p class="text-sm text-forest-green-700 font-semibold mb-1">Hon'ble Minister</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">Ministry of Environment, Forest & Climate
+                            Change</p>
+                    </div>
+                </div>
+
+                <!-- Minister of State -->
+                <div onclick="window.open('https://moef.gov.in/minister-of-state', '_blank')"
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl cursor-pointer">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-forest-green-50 to-forest-green-100 p-6">
+                            <img src="https://ik.imagekit.io/forestproductivity/kv.jpeg" alt="Shri Kirti Vardhan Singh"
+                                class="w-full h-full object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        </div>
+
+
+                    </div>
+                    <div class="p-6 bg-gradient-to-b from-white to-forest-green-50/30">
+                        <h3 class="font-bold text-gray-900 text-base mb-2 leading-tight">Shri Kirti Vardhan Singh</h3>
+                        <p class="text-sm text-forest-green-700 font-semibold mb-1">Hon'ble Minister of State</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">Ministry of Environment, Forest & Climate
+                            Change</p>
+                    </div>
+                </div>
+
+                <!-- Director General -->
+                <div onclick="openLeaderModal('dg')"
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl cursor-pointer">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-forest-green-50 to-forest-green-100 p-6">
+                            <img src="https://ik.imagekit.io/forestproductivity/kanchan-devi.jpg" alt="Smt Kanchan Devi"
+                                class="w-full h-full object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        </div>
+
+
+                    </div>
+                    <div class="p-6 bg-gradient-to-b from-white to-forest-green-50/30">
+                        <h3 class="font-bold text-gray-900 text-base mb-2 leading-tight">Smt Kanchan Devi</h3>
+                        <p class="text-sm text-forest-green-700 font-semibold mb-1">Director General</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">Indian Council of Forestry Research & Education
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Institute Director -->
+                <div onclick="openLeaderModal('director')"
+                    class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-105 transition-all duration-500 hover:shadow-2xl cursor-pointer">
+                    <div class="relative">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-forest-green-50 to-forest-green-100 p-6">
+                            <img src="https://ik.imagekit.io/forestproductivity/director.jpg" alt="Dr. Amit Pandey"
+                                class="w-full h-full object-cover rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        </div>
+
+
+                    </div>
+                    <div class="p-6 bg-gradient-to-b from-white to-forest-green-50/30">
+                        <h3 class="font-bold text-gray-900 text-base mb-2 leading-tight">Dr. Amit Pandey</h3>
+                        <p class="text-sm text-forest-green-700 font-semibold mb-1">Director</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">Institute of Forest Productivity</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="bg-forest-green-900 border-t border-forest-green-700">
+            <div class="max-w-6xl mx-auto px-5 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-forest-green-300 text-sm mb-4 md:mb-0">
+                        <p>&copy; 2026 Institute of Forest Productivity. All rights reserved.</p>
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#"
+                            class="text-forest-green-300 hover:text-white transition-colors duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-forest-green-300 hover:text-white transition-colors duration-300">Terms
+                            of Service</a>
+                        <a href="#"
+                            class="text-forest-green-300 hover:text-white transition-colors duration-300">RTI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="components/loader.js"></script>
+</body>
+</html>

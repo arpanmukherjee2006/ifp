@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIL-I: Vegetation Succession and Native Species Suitability - Institute of Forest Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': {
+                            50: '#f0f9f0',
+                            100: '#dcf2dc',
+                            200: '#bce5bc',
+                            300: '#8dd18d',
+                            400: '#4CAF50',
+                            500: '#2E7D32',
+                            600: '#1B5E20',
+                            700: '#0d4f12',
+                            800: '#0a3f0e',
+                            900: '#08340b',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                        'serif': ['Source Serif Pro', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans overflow-x-hidden">
+    <!-- Navigation -->
+    <!-- Navigation Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="iron-ore/post mining 1.png" alt="SAIL-I Project" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-forest-green-900/70 via-forest-green-800/50 to-forest-green-900/70"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">SAIL-I: Vegetation Succession and Native Species Suitability for Restoration</h1>
+            <p class="text-xl md:text-2xl leading-relaxed">Post Mining Secondary Succession at Meghahatuburu Iron Ore Mine</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Content -->
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-forest-green-600">
+                        <h3 class="text-2xl font-bold text-forest-green-700 mb-6">Early Succession Findings</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800 mb-2">Floral Diversity</h4>
+                                <p class="text-gray-700 leading-relaxed">Emergence of 34 floral species including:</p>
+                                <ul class="mt-2 space-y-1 text-gray-700">
+                                    <li>• 4 trees</li>
+                                    <li>• 9 shrubs</li>
+                                    <li>• 16 herbs</li>
+                                    <li>• 4 grasses</li>
+                                    <li>• 1 fern</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800 mb-2">Dominant Family</h4>
+                                <p class="text-gray-700 leading-relaxed">Asteraceae family shows highest representation in the restored ecosystem</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-forest-green-600">
+                        <h3 class="text-2xl font-bold text-forest-green-700 mb-6">Faunal Biodiversity</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">The restoration site has attracted diverse wildlife including:</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-forest-green-50 p-4 rounded-lg">
+                                <p class="font-semibold text-forest-green-700">Mammals</p>
+                                <ul class="text-sm text-gray-700 mt-2">
+                                    <li>• Monkeys</li>
+                                    <li>• Rabbits</li>
+                                    <li>• Porcupines</li>
+                                </ul>
+                            </div>
+                            <div class="bg-forest-green-50 p-4 rounded-lg">
+                                <p class="font-semibold text-forest-green-700">Avifauna</p>
+                                <p class="text-sm text-gray-700 mt-2">Various bird species have been observed returning to the restored habitat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="lg:sticky lg:top-24">
+                    <img src="iron-ore/post mining 2.png" alt="Restoration Progress" class="w-full h-96 object-cover rounded-2xl shadow-xl">
+                    <p class="text-center text-gray-600 mt-4 italic">Ecological restoration progress at the mining site</p>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-12">
+                <a href="iron-mining-project.html" class="inline-block bg-forest-green-600 hover:bg-forest-green-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+                    ← Back to Iron Mining Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    
+    <script src="components/loader.js"></script>
+</body>
+</html>
