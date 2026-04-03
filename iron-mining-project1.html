@@ -217,5 +217,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     
     <script src="components/loader.js"></script>
+    <script>
+          // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                // When scrolled, change to solid green background
+                navbar.classList.remove('bg-gradient-to-b', 'from-black', 'via-black/90', 'to-transparent');
+                navbar.style.backgroundColor = '#0a3f0e';
+            } else {
+                // When at top, restore black gradient background
+                navbar.classList.add('bg-gradient-to-b', 'from-black', 'via-black/90', 'to-transparent');
+                navbar.style.backgroundColor = '';
+            }
+        });
+     </script>
 </body>
 </html>
