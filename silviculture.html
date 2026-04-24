@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Silviculture - Institute of Forest Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&amp;family=Source+Serif+Pro:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': {
+                            50: '#f0f9f0',
+                            100: '#dcf2dc',
+                            200: '#bce5bc',
+                            300: '#8dd18d',
+                            400: '#4CAF50',
+                            500: '#2E7D32',
+                            600: '#1B5E20',
+                            700: '#0d4f12',
+                            800: '#0a3f0e',
+                            900: '#08340b',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                        'serif': ['Source Serif Pro', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <!-- Combined Navigation -->
+    <!-- Navigation Container -->
+    <nav class="fixed top-0 left-0 right-0 z-50 text-white py-2 transition-all duration-300 shadow-lg bg-gradient-to-b from-black via-black/90 to-transparent"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-5">
+            <!-- Top Header Row -->
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+                <div class="flex items-center gap-3">
+                    <img alt="Institute of Forest Productivity Logo" class="h-8 w-auto object-contain"
+                        src="logo ifp.png" />
+                    <span class="text-lg font-normal text-white">ICFRE - Institute of Forest Productivity, Ranchi</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-4 text-sm">
+                    <a class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200"
+                        href="#">Parichay</a>
+                    <a class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200"
+                        href="#">Karmayogi</a>
+                    <a class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200"
+                        href="#">Rajbhasa</a>
+                    <a class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200"
+                        href="#">RTI</a>
+                    <a class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200"
+                        href="#">Hindi</a>
+                    <div
+                        class="flex items-center gap-1 text-white hover:text-forest-green-400 cursor-pointer px-2 py-1 transition-colors duration-200">
+                        <span class="text-sm">🔍</span>
+                        <span class="text-sm">Search</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Navigation Row -->
+            <div class="flex justify-between items-center py-4">
+                <div class="hidden lg:flex w-full">
+                    <ul class="flex justify-evenly items-center w-full">
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#home">
+                                Home</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#research">
+                                Research</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#education">
+                                Education &amp; Outreach</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#news">
+                                News</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#Event">
+                                Events</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#services">
+                                Services</a></li>
+                        <li><a class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10"
+                                href="#about">
+                                About</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile menu button -->
+                <button aria-controls="navbar-default" aria-expanded="false"
+                    class="lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg"
+                    data-collapse-toggle="navbar-default" type="button">
+                    <span class="sr-only">Open main menu</span>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="none" viewbox="0 0 17 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1h15M1 7h15M1 13h15" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="hidden w-full lg:hidden" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 mt-4 border border-gray-700 rounded-lg bg-black bg-opacity-95">
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="#home">Home</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="index.html">Research</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="education.html">Education
+                            &amp; Outreach</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="#">News</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="#">Events</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold"
+                            href="#">Services</a>
+                    </li>
+                    <li><a class="block py-3 px-4 text-white hover:text-forest-green-400 transition-colors duration-200 text-lg font-bold"
+                            href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img alt="Genetics and Tree Improvement" class="w-full h-full object-cover" src="1.jpg" />
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-forest-green-900/70 via-forest-green-800/50 to-forest-green-900/70">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Silviculture</h1>
+            <p class="text-xl md:text-2xl leading-relaxed">
+                Advancing forest productivity through cutting-edge genetic research and innovative tree improvement
+                programs
+            </p>
+        </div>
+    </section>
+    <!-- Focus and Vision Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <!-- Division Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-forest-green-700 mb-6">Silviculture and Forest Management
+                    Division</h2>
+                <p class="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                    Adopts a holistic focus integrating productivity enhancement, ecological resilience and
+                    socio-economic upliftment through silvicultural interventions
+                </p>
+            </div>
+
+            <!-- Focus Section -->
+            <div class="mb-20">
+                <h2 class="text-5xl md:text-6xl font-bold text-forest-green-700 mb-12 text-center">Focus</h2>
+                <div class="space-y-6">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-forest-green-600">
+                        <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                            Nursery, plantation and regeneration technologies for forest species
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-forest-green-600">
+                        <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                            Ecological restoration of degraded lands and mined areas
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-forest-green-600">
+                        <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                            Climate-smart silviculture for productivity and resilience
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-forest-green-600">
+                        <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                            NTFP cultivation and agroforestry for livelihoods
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-forest-green-600">
+                        <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                            Forest health research on soils, pests, fires and invasives
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Vision Section -->
+            <div
+                class="relative bg-gradient-to-br from-forest-green-700 to-forest-green-800 rounded-2xl p-12 md:p-16 shadow-2xl overflow-hidden">
+                <!-- Decorative Elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+                <div class="relative z-10">
+                    <h2 class="text-5xl md:text-6xl font-bold text-white mb-8 text-center">Vision</h2>
+                    <p class="text-xl md:text-2xl text-white leading-relaxed text-center max-w-4xl mx-auto font-light">
+                        Foster productive, resilient and people-centric forest landscapes through science-based
+                        silviculture and sustainable management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Works Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold text-forest-green-700 mb-4">Works</h2>
+            </div>
+            <!-- Cards Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div
+                    class="h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col group">
+                    <div class="h-56 relative overflow-hidden">
+                        <img alt="Rewilding Coal Overburden"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            src="1.jpg" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 line-clamp-2"
+                            title="Rewilding Coal Overburden">Rewilding Coal Overburden</h3>
+                        <p class="text-gray-600 text-base leading-relaxed mb-6 flex-grow">Detailing the work on
+                            'Rewilding Coal Overburden' by Dr Yogeshwar Mishra.</p>
+                        <div class="border-t border-gray-100 mb-6 w-full"></div>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="relative group cursor-pointer"
+                                onclick="document.getElementById('videoModal').classList.remove('hidden')">
+                                <img alt="Dr Yogeshwar Mishra"
+                                    class="w-14 h-14 rounded-full border-2 border-forest-green-100 shadow-md object-cover object-top"
+                                    src="works/silviculture/DR YOGESHWAR MISHRA.png" />
+                                <div
+                                    class="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800">Dr Yogeshwar Mishra</h4>
+                                <p class="text-xs text-forest-green-600 font-medium uppercase tracking-wider">Scientist,
+                                    Silviculture Division</p>
+                            </div>
+                        </div>
+                        <p
+                            class="text-gray-500 text-sm leading-relaxed mb-8 italic border-l-4 border-forest-green-400 pl-4 bg-gray-50 p-4 rounded-r-xl">
+                            "Advancing forest productivity through cutting-edge genetic research and innovative tree
+                            improvement programs."
+                        </p>
+                        <div
+                            class="flex flex-col xl:flex-row xl:items-center space-y-3 xl:space-y-0 xl:space-x-4 mt-auto">
+                            <a class="flex-1 text-center bg-forest-green-600 hover:bg-forest-green-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+                                href="works/silviculture/Rewilding Coal Overburden.pdf" target="_blank">
+                                More
+                            </a>
+                            <a class="flex-1 text-center bg-white border-2 border-forest-green-600 text-forest-green-600 hover:bg-forest-green-50 font-semibold py-3 px-4 rounded-xl transition-all duration-300"
+                                href="#" target="_blank">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Modal -->
+    <div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 transition-opacity"
+        id="videoModal" style="backdrop-filter: blur(4px);">
+        <div class="relative w-full max-w-4xl bg-black rounded-xl shadow-2xl overflow-hidden aspect-video">
+            <button
+                class="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors bg-black/50 hover:bg-black/80 rounded-full p-2 cursor-pointer"
+                onclick="document.getElementById('videoModal').classList.add('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                    <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    </path>
+                </svg>
+            </button>
+            <div class="w-full h-full flex items-center justify-center text-white text-xl">
+                <!-- Video placeholder -->
+                <div class="text-center">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor"
+                        viewbox="0 0 24 24">
+                        <path
+                            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                    <p class="text-gray-300">Video Placeholder</p>
+                    <p class="text-sm text-gray-500 mt-2">Video will be provided later</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <section class="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-5xl md:text-6xl font-bold text-forest-green-700 mb-4">Projects</h2>
+            </div>
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tree Improvement Card -->
+                <a href="tree-improvement.html">
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
+                        <div class="relative h-96">
+                            <img alt="Tree Improvement"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="1.jpg" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-forest-green-900/90 via-forest-green-800/50 to-transparent">
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-8">
+                                <h3 class="text-3xl md:text-4xl font-bold text-white">Tree Improvement</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- Tissue Culture Card -->
+                <a class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 block"
+                    href="tissue-culture/tissue-culture.html">
+                    <div class="relative h-96">
+                        <img alt="Tissue Culture"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            src="tissue culture img.png" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-forest-green-900/90 via-forest-green-800/50 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8">
+                            <h3 class="text-3xl md:text-4xl font-bold text-white">Tissue Culture</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Footer Images Section -->
+    <section class="w-full">
+        <div class="flex w-full">
+            <div class="w-1/2">
+                <img src="pics and vd/above footer before.PNG" alt="Above Footer Before" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2">
+                <img src="pics and vd/above footer after.PNG" alt="Above Footer After" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <footer class="text-white" style="background-color: #0a3f0e;">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- IWST Bengaluru Section with Image -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">ICFRE - Institute of Forest Productivity, Ranchi
+                    </h4>
+                    <div class="mb-4">
+                        <img alt="IWST Bengaluru Building" class="w-full h-32 object-cover rounded-lg shadow-md"
+                            src="https://ik.imagekit.io/forestproductivity/indexhero.png" />
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Our vision at IFP is to develop and disseminate technological interventions for augmented
+                        eco-restoration, fragile forest ecosystem conservation, forest productivity enhancement, climate
+                        resilient agroforestry, rural life quality improvement and ethnoecological applications.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-2">
+                        <a class="bg-forest-green-700 hover:bg-forest-green-600 p-2 rounded transition-colors duration-300"
+                            href="#">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="bg-forest-green-700 hover:bg-forest-green-600 p-2 rounded transition-colors duration-300"
+                            href="#">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="bg-forest-green-700 hover:bg-forest-green-600 p-2 rounded transition-colors duration-300"
+                            href="#">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.43c-1.14 0-2.06-.93-2.06-2.06 0-1.14.93-2.06 2.06-2.06 1.14 0 2.06.93 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="bg-forest-green-700 hover:bg-forest-green-600 p-2 rounded transition-colors duration-300"
+                            href="#">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M23.5 6.5c-.2-.8-.8-1.4-1.6-1.6C20.4 4.5 12 4.5 12 4.5s-8.4 0-9.9.4c-.8.2-1.4.8-1.6 1.6C0 8 0 12 0 12s0 4 .5 5.5c.2.8.8 1.4 1.6 1.6 1.5.4 9.9.4 9.9.4s8.4 0 9.9-.4c.8-.2 1.4-.8 1.6-1.6.5-1.5.5-5.5.5-5.5s0-4-.5-5.5z">
+                                </path>
+                                <path d="M9.5 15.5l6.5-3.5-6.5-3.5v7z" fill="#fff"></path>
+                            </svg>
+                        </a>
+                        <a class="bg-forest-green-700 hover:bg-forest-green-600 p-2 rounded transition-colors duration-300"
+                            href="#">
+                            <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Tenders</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Research
+                                Activities</a></li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Vacancy</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">RTI
+                                Act</a></li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">RTI
+                                Files</a></li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Facilities</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Publications</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Training</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Academics</a>
+                        </li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Extension
+                                Activities</a></li>
+                        <li><a class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm"
+                                href="#">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Get In Touch -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Get In Touch</h4>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 text-sm">ICFRE- Institute of Forest Productivity,<br>Lalgutwa, Gumla
+                            Road, NH-23, Near Kathal more, Ranchi 835303</p>
+                        <p class="text-gray-300 text-sm">0651-2526140<br>0651-2526150</p>
+                        <p class="text-gray-300 text-sm">dir_ifp@icfre.org</p>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-base font-bold text-white mb-3">Field Stations</h5>
+                        <ul class="space-y-1">
+                            <li class="text-gray-300 text-sm">Agroforestry Research Station, Jadua, Bihar</li>
+                            <li class="text-gray-300 text-sm">Forest Tree Breeding Research Station, Chandwa, Jharkhand
+                            </li>
+                            <li class="text-gray-300 text-sm">Ecoforestry Research Station, Sukna West Bengal</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Location Map -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Location</h4>
+                    <div class="rounded-lg overflow-hidden shadow-md">
+                        <iframe allowfullscreen="" class="w-full" height="200" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.8476682106584!2d85.24588880000002!3d23.3575328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4dfb53e27ae7b%3A0xde6c2a0f4354386b!2sINSTITUTE%20OF%20FOREST%20PRODUCTITVITY!5e0!3m2!1sen!2sin!4v1770911487305!5m2!1sen!2sin"
+                            style="border:0;" width="100%">
+                        </iframe>
+                    </div>
+                    <p class="text-gray-300 text-xs mt-2 text-center">
+                        Hosted at ICFRE Data Centre ISO 27001:2005 Certified
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="border-t" style="background-color: #08340b; border-color: #0d4f12;">
+            <div class="max-w-7xl mx-auto px-5 py-4">
+                <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+                    <p class="text-white mb-2 md:mb-0">© All Rights Reserved 2026 |vICFRE - Institute of Forest
+                        Productivity, Ranchi
+                        2026</p>
+                    <div class="flex space-x-4 text-white">
+                        <span>T&amp;C</span>
+                        <span>Privacy Policy</span>
+                        <span>RTI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="components/loader.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                // When scrolled, change to solid green background
+                navbar.classList.remove('bg-gradient-to-b', 'from-black', 'via-black/90', 'to-transparent');
+                navbar.style.backgroundColor = '#0a3f0e';
+            } else {
+                // When at top, restore black gradient background
+                navbar.classList.add('bg-gradient-to-b', 'from-black', 'via-black/90', 'to-transparent');
+                navbar.style.backgroundColor = '';
+            }
+        });
+    </script>
+</body>
+
+</html>

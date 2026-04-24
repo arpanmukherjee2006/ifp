@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Village - Institute of Forest Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': {
+                            500: '#2E7D32',
+                            600: '#1B5E20',
+                            700: '#0d4f12',
+                            800: '#0a3f0e'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                        'serif': ['Source Serif Pro', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-white text-gray-900">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-forest-green-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="logo ifp.png" alt="Institute of Forest Productivity Logo" class="h-8 w-auto object-contain">
+                <span class="text-lg font-normal">ICFRE - Institute of Forest Productivity, Ranchi</span>
+            </div>
+            <a href="extension.html"
+                class="inline-flex items-center rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold hover:bg-white/10 transition-colors duration-300">
+                Back to Extension
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="3.jpg" alt="Demo Village Banner" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-forest-green-800/80 via-forest-green-700/55 to-forest-green-800/85"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Demo Village</h1>
+            <p class="text-xl md:text-2xl leading-relaxed">Field demonstration landscapes that showcase applied models, participatory learning, and local adoption.</p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-forest-green-700 mb-8">Demo Village</h2>
+                <p class="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                    The Demo Village concept was initiated by the Indian Council of Forestry Research and Education (ICFRE) to effectively disseminate forestry-based technologies developed by ICFRE and its institutes to end users, particularly farming communities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-gradient-to-br from-white to-forest-green-50 rounded-2xl shadow-lg border border-gray-100 p-8">
+                    <h3 class="text-2xl font-bold text-forest-green-700 mb-6">About Demo Village</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        At ICFRE-Institute of Forest Productivity (IFP), Ranchi, the Demo Village serves as a model for sustainable rural development rooted in environmentally responsible practices.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Implemented in active collaboration with forestry extension programs, it aims to build resilient village communities by enhancing their skills, awareness, and capacity to address challenges related to natural resource depletion, climate change, and environmental sustainability.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-white to-forest-green-50 rounded-2xl shadow-lg border border-gray-100 p-8">
+                    <h3 class="text-2xl font-bold text-forest-green-700 mb-6">Key Objectives</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The initiative showcases practical, replicable solutions for agroforestry, soil and water conservation, livelihood enhancement, and climate-resilient farming practices.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        It empowers local communities as active stakeholders in sustainable development, creating models that can be replicated across similar rural landscapes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-forest-green-50 to-white rounded-3xl shadow-xl border border-gray-100 p-10 md:p-12">
+                <h3 class="text-3xl font-bold text-forest-green-700 mb-8 text-center">Demo Villages</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100">
+                        <h4 class="text-2xl font-semibold text-forest-green-600 mb-4">Demo Village Kutam</h4>
+                        <p class="text-gray-700 mb-2">Khunti, Jharkhand</p>
+                        <p class="text-sm text-gray-600 mb-4">A comprehensive model showcasing sustainable rural development practices</p>
+                        <div class="bg-forest-green-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-700">
+                                <strong>Special Feature:</strong> Demonstration plot of Melia at Demo village Kutam, Torpa, Khunti, Jharkhand
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100">
+                        <h4 class="text-2xl font-semibold text-forest-green-600 mb-4">Demo Village Jidu</h4>
+                        <p class="text-gray-700 mb-2">Angara, Ranchi, Jharkhand</p>
+                        <p class="text-sm text-gray-600 mb-4">Focused on climate-resilient farming and agroforestry practices</p>
+                        <div class="bg-forest-green-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-700">
+                                <strong>Focus Areas:</strong> Soil and water conservation, livelihood enhancement, and sustainable agriculture
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-gradient-to-r from-forest-green-100 to-forest-green-50 rounded-xl p-6 border border-forest-green-200">
+                        <h4 class="text-xl font-semibold text-forest-green-700 mb-3">Key Focus Areas</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                            <div class="text-gray-700">
+                                <span class="font-semibold">Agroforestry</span><br>
+                                Integrated farming systems
+                            </div>
+                            <div class="text-gray-700">
+                                <span class="font-semibold">Soil & Water Conservation</span><br>
+                                Sustainable resource management
+                            </div>
+                            <div class="text-gray-700">
+                                <span class="font-semibold">Livelihood Enhancement</span><br>
+                                Income generation activities
+                            </div>
+                            <div class="text-gray-700">
+                                <span class="font-semibold">Climate Resilience</span><br>
+                                Adaptive farming practices
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="extension.html"
+                    class="inline-flex items-center rounded-xl bg-forest-green-600 px-8 py-4 text-white font-semibold hover:bg-forest-green-700 transition-colors duration-300 shadow-lg">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Return to Extension
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Footer Images Section -->
+    <section class="w-full">
+        <div class="flex w-full">
+            <div class="w-1/2">
+                <img src="pics and vd/above footer before.PNG" alt="Above Footer Before" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2">
+                <img src="pics and vd/above footer after.PNG" alt="Above Footer After" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-forest-green-800 text-white">
+        <div class="max-w-7xl mx-auto px-5 py-6 text-sm text-center">
+            ICFRE- Institute of Forest Productivity, Lalgutwa, Gumla Road, NH-23, Near Kathal more, Ranchi 835303
+        </div>
+    </footer>
+</body>
+
+</html>

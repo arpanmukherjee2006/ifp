@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandate - Institute of Forest Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        // Mobile dropdown toggle function
+        function toggleMobileDropdown() {
+            const dropdown = document.getElementById('mobile-dropdown');
+            const arrow = document.getElementById('mobile-dropdown-arrow');
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': {
+                            50: '#f0f9f0',
+                            100: '#dcf2dc',
+                            200: '#bce5bc',
+                            300: '#8dd18d',
+                            400: '#4CAF50',
+                            500: '#2E7D32',
+                            600: '#1B5E20',
+                            700: '#0d4f12',
+                            800: '#0a3f0e',
+                            900: '#08340b',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
+                        'serif': ['Source Serif Pro', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <!-- Navigation Container -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 text-white py-2 transition-all duration-300 shadow-lg bg-gradient-to-b from-black via-black/90 to-transparent">
+        <div class="max-w-7xl mx-auto px-5">
+            <!-- Top Header Row -->
+            <div class="flex justify-between items-center py-2 border-b border-white/10">
+                <div class="flex items-center gap-3">
+                    <img src="logo ifp.png" alt="Institute of Forest Productivity Logo"
+                        class="h-8 w-auto object-contain">
+                    <span class="text-lg font-normal text-white">ICFRE - Institute of Forest Productivity, Ranchi</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-4 text-sm">
+                    <a href="#"
+                        class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200">Parichay</a>
+                    <a href="#"
+                        class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200">Karmayogi</a>
+                    <a href="#"
+                        class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200">Rajbhasa</a>
+                    <a href="#"
+                        class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200">RTI</a>
+                    <a href="#"
+                        class="text-white hover:text-forest-green-400 px-2 py-1 transition-colors duration-200">Hindi</a>
+                    <div
+                        class="flex items-center gap-1 text-white hover:text-forest-green-400 cursor-pointer px-2 py-1 transition-colors duration-200">
+                        <span class="text-sm">🔍</span>
+                        <span class="text-sm">Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation Row -->
+            <div class="flex justify-between items-center py-4">
+                <div class="hidden lg:flex w-full">
+                    <ul class="flex justify-evenly items-center w-full">
+                        <li><a href="index.html"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">Home</a>
+                        </li>
+                        <li><a href="index.html#research"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">Research</a>
+                        </li>
+                        <li><a href="education.html"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">Education
+                                & Outreach</a></li>
+                        <li><a href="index.html#news"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">News</a>
+                        </li>
+                        <li><a href="index.html#Event"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">Events</a>
+                        </li>
+                        <li><a href="index.html#services"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">Services</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-white hover:text-forest-green-400 px-4 py-3 block text-lg font-bold transition-colors duration-200 whitespace-nowrap rounded-lg hover:bg-white/10">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile menu button -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="hidden w-full lg:hidden" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 mt-4 border border-gray-700 rounded-lg bg-black bg-opacity-95">
+                    <li><a href="index.html"
+                            class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold">Home</a>
+                    </li>
+                    <li><a href="education.html"
+                            class="block py-3 px-4 text-white hover:text-forest-green-400 border-b border-gray-700 transition-colors duration-200 text-lg font-bold">Education
+                            & Outreach</a></li>
+                    <li><a href="about.html"
+                            class="block py-3 px-4 text-white hover:text-forest-green-400 transition-colors duration-200 text-lg font-bold">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Hero Section -->
+    <section
+        class="relative min-h-[50vh] overflow-hidden flex flex-col justify-center items-center pt-24 bg-forest-green-900">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://ik.imagekit.io/forestproductivity/indexhero.png" alt="Institute of Forest Productivity"
+                class="w-full h-full object-cover">
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-forest-green-800/80 via-forest-green-700/60 to-forest-green-900/90">
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center text-white px-5 max-w-4xl mx-auto mt-16 md:mt-0 pt-20 pb-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Mandate</h1>
+            <div class="w-24 h-1 bg-white mx-auto mt-6 rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-5">
+            <!-- Vision and Mission Cards -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Vision -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border-l-8 border-blue-600 p-8 transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-blue-50 rounded-full mb-4">
+                            <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Vision</h2>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                        To develop and disseminates technological interventions for augmented eco-restoration, fragile
+                        forest ecosystem conservation, forest productivity enhancement, climate resilient agroforestry,
+                        rural life quality improvement and ethno-ecological applications.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border-l-8 border-forest-green-600 p-8 transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-forest-green-50 rounded-full mb-4">
+                            <svg class="w-12 h-12 text-forest-green-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Mission</h2>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                        Undertake research on eco-restoration and rehabilitation, genetic improvement & resources
+                        mapping of important forest tree species, NTFPs, invasive species and LKTs, silviculture of
+                        important tree species, forest health & capacity building extension programme.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Three Horizontal Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Agro-ecological zones -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="bg-gradient-to-r from-forest-green-600 to-forest-green-700 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white text-center">Agro-ecological Zones</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">1</span>
+                                <span class="text-gray-700 font-medium">Eastern Plateau</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">2</span>
+                                <span class="text-gray-700 font-medium">Chhotanagpur Plateau</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">3</span>
+                                <span class="text-gray-700 font-medium">Bengal Plains</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">4</span>
+                                <span class="text-gray-700 font-medium">Northern Plain</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">5</span>
+                                <span class="text-gray-700 font-medium">Eastern Plain</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span
+                                    class="bg-forest-green-100 text-forest-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">6</span>
+                                <span class="text-gray-700 font-medium">Eastern Himalayas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Main forest types -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="bg-gradient-to-r from-green-600 to-green-700 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white text-center">Main Forest Types</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">1</span>
+                                <span class="text-gray-700 font-medium text-sm">Northern Tropical wet evergreen
+                                    forest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">2</span>
+                                <span class="text-gray-700 font-medium text-sm">Tropical moist deciduous forest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">3</span>
+                                <span class="text-gray-700 font-medium text-sm">Tropical dry deciduous forest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">4</span>
+                                <span class="text-gray-700 font-medium text-sm">Littoral & swamp forest
+                                    (Mangroves)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">5</span>
+                                <span class="text-gray-700 font-medium text-sm">Northern Sub Tropical semi evergreen
+                                    forest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="bg-green-100 text-green-700 w-6 h-6 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0 text-sm">6</span>
+                                <span class="text-gray-700 font-medium text-sm">Northern Sub Tropical Broad Leaved Wet
+                                    Hill Forests</span>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-3 border-t border-gray-100 text-right">
+                            <span class="text-xs font-semibold text-gray-500 italic">Source: ISFR Report, 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Geographical Jurisdiction -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white text-center">Geographical Jurisdiction</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3 shadow-sm text-sm">
+                                    1</div>
+                                <span class="text-gray-700 font-medium pt-1">Bihar, Jharkhand and West Bengal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3 shadow-sm text-sm">
+                                    2</div>
+                                <span class="text-gray-700 font-medium pt-1">More than 48,130.56 Km² forest area</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3 shadow-sm text-sm">
+                                    3</div>
+                                <span class="text-gray-700 font-medium pt-1">Six agro-ecological zones</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3 shadow-sm text-sm">
+                                    4</div>
+                                <span class="text-gray-700 font-medium pt-1">Six main forest types</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Competency Card -->
+            <div
+                class="bg-gradient-to-br from-forest-green-50 to-white rounded-2xl shadow-xl p-8 border border-forest-green-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-5">
+                    <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 bg-forest-green-100 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-forest-green-600" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-forest-green-800 mb-4">Core Competency</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 relative z-10">
+                    <div class="text-center">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mb-4 border border-forest-green-100">
+                            <svg class="w-8 h-8 text-forest-green-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-forest-green-800 mb-2">Eco-rehabilitation</h3>
+                        <p class="text-gray-700 font-medium">Eco-rehabilitation of mined-out areas</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mb-4 border border-forest-green-100">
+                            <svg class="w-8 h-8 text-forest-green-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-forest-green-800 mb-2">Forest Productivity</h3>
+                        <p class="text-gray-700 font-medium">Forest Productivity enhancement by superior forestry
+                            germplasm</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg mx-auto mb-4 border border-forest-green-100">
+                            <svg class="w-8 h-8 text-forest-green-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-forest-green-800 mb-2">Conservation</h3>
+                        <p class="text-gray-700 font-medium">Biodiversity and soil conservation, water harvesting and
+                            river rejuvenation</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Combined Footer Images Section -->
+    <section class="w-full">
+        <div class="flex w-full">
+            <div class="w-1/2">
+                <img src="pics and vd/above footer before.PNG" alt="Above Footer Before" 
+                     class="w-full h-full object-cover">
+            </div>
+            <div class="w-1/2">
+                <img src="pics and vd/above footer after.PNG" alt="Above Footer After" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <footer class="text-white" style="background-color: #0a3f0e;">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-5 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- IWST Bengaluru Section with Image -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">ICFRE - Institute of Forest Productivity, Ranchi</h4>
+                    <div class="mb-4">
+                        <img src="https://ik.imagekit.io/forestproductivity/indexhero.png" alt="IFP Building"
+                            class="w-full h-32 object-cover rounded-lg shadow-md">
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Our vision at IFP is to develop and disseminate technological interventions for augmented
+                        eco-restoration, fragile forest ecosystem conservation, forest productivity enhancement, climate
+                        resilient agroforestry, rural life quality improvement and ethnoecological applications.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm">Tenders</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm">Research
+                                Activities</a></li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm">Vacancy</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm">RTI
+                                Act</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-forest-green-400 transition-colors duration-300 text-sm">About
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get In Touch -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Get In Touch</h4>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 text-sm">ICFRE- Institute of Forest Productivity,<br>Lalgutwa, Gumla
+                            Road, NH-23, Near Kathal more, Ranchi 835303</p>
+                        <p class="text-gray-300 text-sm">0651-2526140<br>0651-2526150</p>
+                        <p class="text-gray-300 text-sm">dir_ifp@icfre.org</p>
+                    </div>
+
+                    <div class="mt-6">
+                        <h5 class="text-base font-bold text-white mb-3">Field Stations</h5>
+                        <ul class="space-y-1">
+                            <li class="text-gray-300 text-sm">Agroforestry Research Station, Jadua, Bihar</li>
+                            <li class="text-gray-300 text-sm">Forest Tree Breeding Research Station, Chandwa, Jharkhand
+                            </li>
+                            <li class="text-gray-300 text-sm">Ecoforestry Research Station, Sukna West Bengal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Location Map -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Location</h4>
+                    <div class="rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.8476682106584!2d85.24588880000002!3d23.3575328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4dfb53e27ae7b%3A0xde6c2a0f4354386b!2sINSTITUTE%20OF%20FOREST%20PRODUCTITVITY!5e0!3m2!1sen!2sin!4v1770911487305!5m2!1sen!2sin"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t" style="background-color: #08340b; border-color: #0d4f12;">
+            <div class="max-w-7xl mx-auto px-5 py-4">
+                <div class="flex flex-col md:flex-row justify-between items-center text-xs">
+                    <p class="text-white mb-2 md:mb-0">© All Rights Reserved 2026 | ICFRE - Institute of Forest
+                        Productivity, Ranchi</p>
+                    <div class="flex space-x-4 text-white">
+                        <span>T&C</span>
+                        <span>Privacy Policy</span>
+                        <span>RTI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>
